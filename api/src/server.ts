@@ -9,7 +9,7 @@ const server = express()
 
 server.use(helmet())
 server.use(cors({
-  origin: 'http://localhost:3333'
+  origin: process.env.PROXY_URL
 }))
 server.use(express.json())
 server.use(routes)

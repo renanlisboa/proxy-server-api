@@ -1,17 +1,18 @@
 import { config as envConfig } from 'dotenv'
 import express from 'express'
-import morgan from 'morgan'
 import helmet from 'helmet'
 import cors from 'cors'
 import routes from './routes'
+import { Plugins } from './plugins'
 
 envConfig()
 const server = express()
+const plugins = new Plugins()
 
-server.use(morgan('dev'))
 server.use(helmet())
 server.use(cors())
 server.use(express.json())
+server.use(plugins.runPlugins)
 server.use('/api', routes)
 
 server.listen(process.env.PORT, () => {

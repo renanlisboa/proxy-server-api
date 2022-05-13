@@ -1,8 +1,8 @@
 {
-  "name": "clean-tdd-node-api-template",
+  "name": "proxy-server-api",
   "version": "1.0.0",
   "main": "index.js",
-  "repository": "git@github.com:renanlisboa/clean-tdd-node-api-template.git",
+  "repository": "git@github.com:renanlisboa/proxy-server-api.git",
   "author": "renanlisboa <renlp89.developer@gmail.com>",
   "license": "MIT",
   "scripts": {

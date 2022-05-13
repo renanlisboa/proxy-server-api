@@ -19,10 +19,10 @@ $ npm install
 # api and proxy server
 
 # yarn
-$ yarn dev:server
+$ yarn run dev:server
 
 # npm
-$ npm dev:server
+$ npm run dev:server
 ```
 
 ## Adding Plugin To Proxy Server
